@@ -54,15 +54,20 @@ p {
 label {
     color: #0caf16;
 }
-button {
+.btn {
     background: linear-gradient(
         268.22deg,
         #30c723 0%,
         #7ffb8c 0.01%,
         #10c800 100.66%
     );
+    font-size: 20px;
+    color: white;
     box-shadow: 0px 10px 20px #5bea5e;
     border-radius: 10px;
+}
+.btn:hover {
+    color: #807d7d;
 }
 /* .lingkaran {
     width: 334px;

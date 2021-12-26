@@ -32,8 +32,8 @@
                       <label for="password" class="form-label">Password</label>
                       <input type="password" class="form-control" id="password">
                     </div>
-                    <div class="d-grid">
-                        <button type="button" class="btn">Submit</button>
+                    <div class="tombol d-grid">
+                        <button type="button" class="btn fw-bold">Login</button>
                     </div>
                   </form>
             </div>
