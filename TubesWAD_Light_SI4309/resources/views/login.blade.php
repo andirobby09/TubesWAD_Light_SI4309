@@ -33,7 +33,8 @@
                       <input type="password" class="form-control" id="password">
                     </div>
                     <div class="tombol d-grid">
-                        <button type="button" class="btn fw-bold">Login</button>
+                        {{-- <a type="button" class="btn fw-bold">Login</button> --}}
+                        <a href="home" type="button" class="btn fw-bold">Login</a>
                     </div>
                   </form>
             </div>
