@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\LoginController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,9 +14,40 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('login');
+Route::get('/', [LoginController::class, 'index']);
+Route::post('/', [LoginController::class, 'authenticate']);
+Route::get('/logout', [LoginController::class, 'logout']);
+
+
+
+// Route::post('/postlogin', 'LoginController@postlogin')->name('postlogin');
+Route::post('/home', function () {
+    return view('home', [
+        "title" => "home"
+    ]);
 });
 Route::get('/home', function () {
-    return view('home');
+    return view('home', [
+        "title" => "home"
+    ]);
+});
+Route::get('/stock', function () {
+    return view('stok', [
+        "title" => "stok"
+    ]);
+});
+Route::get('/pembelian', function () {
+    return view('pembelian', [
+        "title" => "pembelian"
+    ]);
+});
+Route::get('/pangkalan', function () {
+    return view('pangkalan', [
+        "title" => "pangkalan"
+    ]);
+});
+Route::get('/riwayat', function () {
+    return view('riwayat', [
+        "title" => "riwayat"
+    ]);
 });

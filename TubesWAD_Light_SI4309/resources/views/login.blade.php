@@ -21,27 +21,27 @@
     <div class="container-login">
         <div class="row">
             <div class="col">
-                <p class="text-center"><img src="foto/logomelon-lpg.png" width= "82px">MELON.LPG<p>
+                <p class="text-center mt-2"><img src="foto/logomelon-lpg.png" width= "52px">MELON.LPG<p>
                 <p id="login">LOGIN</p>
-                <form class="ms-4">
+                <form class="ms-4" action="home" method="POST">
+                    @csrf
                     <div class="mb-3">
                       <label for="nohp" class="form-label">No Handphone</label>
-                      <input type="email" class="form-control" id="nohp" aria-describedby="emailHelp">
+                      <input type="text" class="form-control" id="nohp" name="nohp" aria-describedby="emailHelp" autofocus required>
                     </div>
                     <div class="mb-3">
                       <label for="password" class="form-label">Password</label>
-                      <input type="password" class="form-control" id="password">
+                      <input type="password" name="password" class="form-control" id="password" required>
                     </div>
                     <div class="tombol d-grid">
-                        {{-- <a type="button" class="btn fw-bold">Login</button> --}}
-                        <a href="home" type="button" class="btn fw-bold">Login</a>
+                        <button type="submit" class="btn fw-bold">Login</button>
                     </div>
-                  </form>
+                </form>
             </div>
             <div class="col">
                 <div class="logo">
                     <div class="lingkaran">
-                        <img src="foto/logomelon-lpg.png" width= "428px">
+                        <img src="foto/logomelon-lpg.png" width= "350px" class="m-4">
                     </div>
                 </div>
                 {{-- <p><img src="foto/logomelon-lpg.png" width="82px">MELON.LPG<p> --}}
