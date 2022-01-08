@@ -12,18 +12,19 @@
     <title>Tubes Light</title>
 </head>
 <body>
-    <div class="header">
+    <!-- <div class="header">
         <div class="container">
-            <h5 class="text-center pt-2">Silahkan Login Terlebih Dahulu</h5>
+            <h5 class="text-center">Silahkan Login Terlebih Dahulu</h5>
         </div>
-    </div>
-
-    <div class="container-login">
-        <div class="row">
+    </div> -->
+    <div>
+    <div class="container login">
+        <div class="row d-flex justify-content-center">
             <div class="col">
-                <p class="text-center mt-2"><img src="foto/logomelon-lpg.png" width= "52px">MELON.LPG<p>
-                <p id="login">LOGIN</p>
-                <form class="ms-4" action="home" method="POST">
+                <p id="buka">Silahkan Login Terlebih Dahulu</p>
+                <!-- <p class="text-center mt-2"><img src="foto/logomelon-lpg.png" width= "52px">MELON.LPG<p> -->
+                <p id="login" class="text-center mt-4">LOGIN</p>
+                <form class="m-4" action="home" method="POST">
                     @csrf
                     <div class="mb-3">
                       <label for="nohp" class="form-label">No Handphone</label>
@@ -38,8 +39,8 @@
                     </div>
                 </form>
             </div>
-            <div class="col">
-                <div class="logo">
+            <div class="col logo">
+                <div class="">
                     <div class="lingkaran">
                         <img src="foto/logomelon-lpg.png" width= "350px" class="m-4">
                     </div>
